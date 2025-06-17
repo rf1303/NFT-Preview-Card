@@ -1,0 +1,9 @@
+@use './variables' as *;
+
+
+@mixin tgSize($size , $weight ) {
+  font-size: $size;
+  font-weight: $weight;
+  font-family: outfit, sans-serif;
+}
+

@@ -1,0 +1,132 @@
+@use './reset';
+@use './variables' as *;
+@use './mixin' as *;
+@use './font-face' as *;
+
+@include fontFace('outfit', '../fonts/Outfit-VariableFont_wght.ttf', 100 600);
+
+body {
+  background-color: $blue950;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-family: 'outfit';
+    margin-inline: $space-100;
+}
+
+.wrappers__cards {
+  inline-size: min(21.875rem, 100%);
+  block-size: min(37.25rem, 100%);
+  display: grid;
+  gap: $space-300;
+  padding: $space-300;
+  background-color: $blue900;
+  border-radius: $space-100;
+  box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.25);
+}
+
+.cards__image  {
+  position: relative;
+}
+
+.image__card {
+  inline-size: (18.875rem, 100%);
+  block-size: (18.875rem, 100%);
+  border-radius: $space-100;
+}
+
+.image__icon {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0;
+  background-color: rgba(0, 255,248, .45);
+  border-radius: $space-100;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s ease;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.wrappers__body {
+  display: grid;
+  gap: $space-300;
+}
+
+.body__heads {
+  display: grid;
+  gap: $space-200;
+}
+
+.wrappers__numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.numbers__icons {
+  display: flex;
+  align-items: flex-end;
+  gap: $space-100;
+}
+
+.body__title {
+  @include tgSize($text-1, 600);
+  color: $white-color;
+    transition: all .5s ease;
+  &:hover {
+    color: $cyan400;
+    cursor: pointer;
+  }
+}
+
+.body__lead {
+  @include tgSize($text-2, 300);
+  color: $blue500;
+}
+.numbers__nro {
+  @include tgSize($text-3, 600);
+  line-height: .8;
+  color: $cyan400;
+}
+
+.numbers__text {
+  @include tgSize(text-3, 400);
+  line-height: 1;
+  color: $blue500;
+}
+
+.line {
+  inline-size: 100%;
+  block-size: .006rem;
+  background-color: #979797;
+}
+
+.wrappers__avatar {
+  display: flex;
+  gap: $space-200;
+}
+
+.avatar__image {
+  inline-size: 2.063rem;
+  block-size: 2.063rem;
+  outline: .013rem solid $white-color;
+  border-radius: 50%;
+}
+
+.avatar__name {
+  @include tgSize($text-3, 400);
+  color: $white-color;
+  transition: all .5s ease;
+  &:hover {
+    color: $cyan400;
+    cursor: pointer;
+  }
+}
+.avatar__descr {
+  color: $blue500;
+  margin-inline-end: .3rem;
+}
