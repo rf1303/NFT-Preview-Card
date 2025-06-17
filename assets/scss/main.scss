@@ -22,7 +22,7 @@ body {
   padding: $space-300;
   background-color: $blue900;
   border-radius: $space-100;
-  box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.25);
+  box-shadow: .013rem .013rem .625rem 0px rgba(0,0,0,0.4),-.013rem -.013rem .625rem 0px rgba(0,0,0,0.4),inset .006rem .006rem 5px 0px rgba(0,0,0,0.2);
 }
 
 .cards__image  {
