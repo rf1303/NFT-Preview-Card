@@ -67,8 +67,8 @@ body {
 }
 
 .image__card {
-  inline-size: 18.875rem, 100%;
-  block-size: 18.875rem, 100%;
+  inline-size: min(18.875rem, 100%);
+  block-size: min(18.875rem, 100%);
   border-radius: 0.5rem;
 }
 
@@ -82,7 +82,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 .image__icon:hover, .image__icon:focus {
   opacity: 1;
@@ -117,7 +117,7 @@ body {
   font-family: outfit, sans-serif;
   line-height: 1;
   color: #ffffff;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 .body__title:hover {
   color: hsl(178, 100%, 50%);
@@ -171,7 +171,7 @@ body {
   font-weight: 400;
   font-family: outfit, sans-serif;
   color: #ffffff;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 .avatar__name:hover {
   color: hsl(178, 100%, 50%);

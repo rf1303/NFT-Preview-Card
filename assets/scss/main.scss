@@ -36,8 +36,8 @@ body {
 }
 
 .image__card {
-  inline-size: (18.875rem, 100%);
-  block-size: (18.875rem, 100%);
+  inline-size: min(18.875rem, 100%);
+  block-size: min(18.875rem, 100%);
   border-radius: $space-100;
 }
 
@@ -51,7 +51,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .5s ease;
+  transition: all .3s ease;
   &:hover,
   &:focus {
     opacity: 1;
@@ -85,7 +85,7 @@ body {
   @include tgSize($text-1, 600);
   line-height: 1;
   color: $white-color;
-    transition: all .5s ease;
+    transition: all .3s ease;
   &:hover {
     color: $cyan400;
     cursor: pointer;
@@ -130,7 +130,7 @@ body {
 .avatar__name {
   @include tgSize($text-3, 400);
   color: $white-color;
-  transition: all .5s ease;
+  transition: all .3s ease;
   &:hover {
     color: $cyan400;
     cursor: pointer;
