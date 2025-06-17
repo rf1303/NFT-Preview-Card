@@ -81,6 +81,7 @@ body {
 }
 .image__icon:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 .wrappers__body {
