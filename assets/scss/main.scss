@@ -11,10 +11,10 @@ body {
   justify-items: center;
   align-items: center;
   font-family: 'outfit', sans-serif;
-    margin-inline: $space-100;
+  margin-inline: $space-100;
 }
 
-.wrappers__cards {
+.wrappers__ntf {
   inline-size: min(21.875rem, 100%);
   block-size: min(37.25rem, 100%);
   display: grid;
@@ -23,6 +23,7 @@ body {
   background-color: $blue900;
   border-radius: $space-100;
   box-shadow: .013rem .013rem .625rem 0px rgba(0,0,0,0.4),-.013rem -.013rem .625rem 0px rgba(0,0,0,0.4),inset .006rem .006rem 5px 0px rgba(0,0,0,0.2);
+
 }
 
 .cards__image  {
@@ -46,7 +47,8 @@ body {
   justify-content: center;
   align-items: center;
   transition: all .5s ease;
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 1;
     cursor: pointer;
   }
@@ -76,6 +78,7 @@ body {
 
 .body__title {
   @include tgSize($text-1, 600);
+  line-height: 1.2;
   color: $white-color;
     transition: all .5s ease;
   &:hover {
