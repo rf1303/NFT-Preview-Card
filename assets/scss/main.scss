@@ -14,6 +14,11 @@ body {
   margin-inline: $space-100;
 }
 
+.wrappers__cards {
+  inline-size: min(21.875rem, 100%);
+  block-size: min(37.25rem, 100%);
+}
+
 .wrappers__ntf {
   inline-size: min(21.875rem, 100%);
   block-size: min(37.25rem, 100%);
@@ -78,7 +83,7 @@ body {
 
 .body__title {
   @include tgSize($text-1, 600);
-  line-height: 1.2;
+  line-height: 1;
   color: $white-color;
     transition: all .5s ease;
   &:hover {
@@ -89,6 +94,7 @@ body {
 
 .body__lead {
   @include tgSize($text-2, 300);
+  line-height: 1.2;
   color: $blue500;
 }
 .numbers__nro {
